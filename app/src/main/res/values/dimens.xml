@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="answerTextSize">100sp</dimen>
+    <dimen name="questTextSize">70sp</dimen>
+    <dimen name="questTextSize2">60sp</dimen>
+    <dimen name="buttonW">200dp</dimen>
+    <dimen name="buttonH">100dp</dimen>
+</resources>

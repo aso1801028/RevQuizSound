@@ -1,0 +1,14 @@
+<resources>
+    <string name="app_name">RevQuizSound</string>
+    <string name="answerText">回答</string>
+    <string name="answerButton">堪える</string>
+    <string name="questText">インシデント</string>
+    <string name="questButtonText">例題</string>
+    <string name="syutudaiChangebuttonText">出題</string>
+    <string name="correctanswerText">正解</string>
+    <string name="questionsText">出題</string>
+    <string name="mistakeText">間違い</string>
+    <string name="applauseText">スタンディングオベーション</string>
+    <string name="stopbutton">停止</string>
+    <string name="playerbutton">開始</string>
+</resources>
