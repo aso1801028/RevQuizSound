@@ -11,7 +11,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="8dp"
-        android:layout_marginTop="64dp"
+        android:layout_marginTop="16dp"
         android:layout_marginEnd="8dp"
         android:text="@string/questText"
         android:textSize="@dimen/questTextSize2"
@@ -33,43 +33,39 @@
         app:srcCompat="@drawable/syutudai" />
 
     <Button
-        android:id="@+id/questionButtonV"
+        android:id="@+id/ButtonA"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="250dp"
-        android:layout_marginTop="175dp"
         android:background="@color/colorPrimaryDark"
         android:text="@string/correctanswerText"
         android:textColor="@android:color/background_light"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="@+id/mistakebutton" />
 
     <Button
         android:id="@+id/mistakebutton"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="175dp"
         android:layout_marginEnd="250dp"
         android:background="@android:color/holo_red_dark"
         android:text="@string/mistakeText"
         android:textColor="@android:color/background_light"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toBottomOf="@+id/questText" />
 
     <Button
-        android:id="@+id/questionButtonV"
+        android:id="@+id/ButtonQ"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="250dp"
-        android:layout_marginEnd="250dp"
+        android:layout_marginTop="24dp"
         android:background="@android:color/holo_green_dark"
         android:text="@string/questionsText"
         android:textColor="@android:color/background_light"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintStart_toStartOf="@+id/mistakebutton"
+        app:layout_constraintTop_toBottomOf="@+id/mistakebutton" />
 
     <Button
         android:id="@+id/answerchangebutton"
@@ -89,13 +85,9 @@
         android:id="@+id/standingbutton"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="150dp"
-        android:layout_marginTop="250dp"
         android:background="#FFFF00"
         android:text="@string/applauseText"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.333"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintEnd_toEndOf="@+id/ButtonA"
+        app:layout_constraintTop_toTopOf="@+id/ButtonQ" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
